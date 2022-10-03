@@ -1,0 +1,16 @@
+version: "3"
+services:
+  web:
+    #build:  #./docker/php-fpm/Dockerfile
+   #   context: ./
+   #   dockerfile: ./docker/php-fpm/Dockerfile
+    #image: tkykzk/testimage:latest
+    image: tkykzk/testimage:ver2
+    #command:
+    #args:
+    #  -  bash -c "/var/www/html/web_init.sh"
+    tty: true
+    stdin_open: true
+    ports:
+      - "8080:80"
+    container_name: testImage
